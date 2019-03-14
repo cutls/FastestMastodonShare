@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>FastestMastodonShare</title>
+    <style>.hide{display:none;} #error{color:red;}</style>
+</head>
+<div id="error"></div>
+<div id="toot">
+    <textarea id="toot-txt"></textarea><br>
+    <select id="visible">
+        <option value="public">公開</option>
+        <option value="unlisted">未収載</option>
+        <option value="private">非公開</option>
+    </select>
+    <button id="toot-btn">Toot</button>
+    <br>
+    <span id="seek"></span>%<br>
+    Tootを押すか100%になると投稿されます。<br>
+    <button id="cancel-btn">キャンセル</button><br>
+    <a href="index.ja.html?option">オプション</a>/<a href="index.html?option&setlang">English</a>
+</div>
+<div id="login" class="hide">
+    Mastodonログイン
+    <input type="text" placeholder="e.g)mstdn.jp" id="login-form"><br>
+    <button id="login-btn">ログイン</button><br>
+    <a href="index.html?setlang">English</a>
+</div>
+<div id="auth" class="hide">
+    コードを張り付け
+    <input type="text" id="auth-form"><br>
+    <button id="auth-btn">認証</button>
+</div>
+<div id="option" class="hide">
+    <textarea id="toot-templete">{{title}} - {{url}}</textarea><br>
+    <select id="visible">
+        <option value="public">公開</option>
+        <option value="unlisted">未収載</option>
+        <option value="private">非公開</option>
+    </select>
+    この秒を経過したらトゥート<br>
+    <input type="number" id="toot-sec" value="5">秒<br>
+    <button id="optionSet-btn">設定</button><br>
+    <a href="index.html?option&setlang">English</a><br>
+    <br>
+    <b>About this extension</b><br>
+    &copy; Cutls P 2019 (GitHub:cutls/FastestMastodonShare)<br>
+    (警告/確認なしにリセットされます。)<br>
+    <button id="clear-btn">初期化</button><br>
+</div>
+<script src="main.js"></script>

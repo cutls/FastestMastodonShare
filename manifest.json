@@ -1,0 +1,15 @@
+{
+  "name": "FastestMastodonShare",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "世界最速WebページMastodonシェア",
+  "permissions": ["tabs"],
+  "icons": {
+    "16": "./img/icon16.png",
+    "48": "./img/icon48.png",
+    "128": "./img/icon128.png"
+},
+  "browser_action": {
+    "default_popup": "index.html"
+  }
+}

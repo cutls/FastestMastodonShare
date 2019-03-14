@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>FastestMastodonShare</title>
+    <style>.hide{display:none;} #error{color:red;}</style>
+</head>
+<div id="error"></div>
+<div id="toot">
+    <textarea id="toot-txt"></textarea><br>
+    <select id="visible">
+        <option value="public">Public</option>
+        <option value="unlisted">Unlisted</option>
+        <option value="private">Private</option>
+    </select>
+    <button id="toot-btn">Toot</button>
+    <br>
+    <span id="seek"></span>%<br>
+    Click "Toot" or 100% to toot.<br>
+    <button id="cancel-btn">Cancel</button><br>
+    <a href="index.html?option">Option</a>/<a href="index.ja.html?setlang&option">Japanese</a>
+</div>
+<div id="login" class="hide">
+    Mastodon Login
+    <input type="text" placeholder="e.g)mstdn.social" id="login-form"><br>
+    <button id="login-btn">Login</button><br>
+    <a href="index.ja.html?setlang">Japanese</a>
+</div>
+<div id="auth" class="hide">
+    Paste the code
+    <input type="text" id="auth-form"><br>
+    <button id="auth-btn">Auth</button>
+</div>
+<div id="option" class="hide">
+    <textarea id="toot-templete">{{title}} - {{url}}</textarea><br>
+    <select id="visible">
+        <option value="public">Public</option>
+        <option value="unlisted">Unlisted</option>
+        <option value="private">Private</option>
+    </select>
+    Click to toot<br>
+    <input type="number" id="toot-sec" value="5">sec<br>
+    <button id="optionSet-btn">Set</button><br>
+    <a href="index.ja.html?setlang&option">Japanese</a><br>
+    <br>
+    <b>About this extension</b><br>
+    &copy; Cutls P 2019 (GitHub:cutls/FastestMastodonShare)<br>
+    (danger/no confirm)<br>
+    <button id="clear-btn">All reset</button><br>
+</div>
+<script src="main.js"></script>
